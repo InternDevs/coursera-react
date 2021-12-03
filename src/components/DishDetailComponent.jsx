@@ -22,9 +22,9 @@ class DishDetail extends Component{
         if(dish.comments !== null && dish.comments.length > 0){
             const comments = dish.comments.map(comment => {
                 return(
-                    <li id={`comment-id-${comment.id}`}>
+                    <li key={comment.id} id={`comment-id-${comment.id}`}>
                         <h5>{comment.comment}</h5>
-                        <p>--{comment.autor}, {comment.date}</p>
+                        <p>--{comment.author}, {comment.date}</p>
                     </li>
                 );
             })

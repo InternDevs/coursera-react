@@ -11,26 +11,26 @@
             "comments": [{
                     "id": 0,
                     "comment": "Imagine all the eatables, living in conFusion!",
-                    "autor": "John Lemon",
+                    "author": "John Lemon",
                     "date": "Oct 17, 2012"
                 },{
                     "id": 1,
                     "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-                    "autor": "Paul McVites",
+                    "author": "Paul McVites",
                     "date": "Sep 06, 2014"
                 },{
                     "id": 2,
                     "comment": "Eat it, just eat it!",
-                    "autor": "Michael Jaikishan",
+                    "author": "Michael Jaikishan",
                     "date": "Feb 14, 2015"
                 },{
                     "id": 3,
                     "comment": "Ultame, Reaching for the stars!",
-                    "autor": "Ringo Starry",
+                    "author": "Ringo Starry",
                     "date": "Dec 03, 2013"
                 },{"id": 5,
                     "comment": "It's your birthday, we're gonna party!",
-                    "autor": "50 Cent",
+                    "author": "50 Cent",
                     "date": "Dec 03, 2011"
                 }]
         },{
@@ -44,11 +44,11 @@
             "comments": [{
                     "id": 0,
                     "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-                    "autor": "Paul McVites",
+                    "author": "Paul McVites",
                     "date": "Sep 06, 2014"
                 },{"id": 1,
                     "comment": "It's your birthday, we're gonna party!",
-                    "autor": "50 Cent",
+                    "author": "50 Cent",
                     "date": "Dec 03, 2011"
                 }]                     
         },{
@@ -62,22 +62,22 @@
             "comments": [{
                 "id": 0,
                 "comment": "It's your birthday, we're gonna party!",
-                "autor": "50 Cent",
+                "author": "50 Cent",
                 "date": "Dec 03, 2011"
                 },{
                 "id": 1,
                 "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
-                "autor": "Paul McVites",
+                "author": "Paul McVites",
                 "date": "Sep 06, 2014"
             },{
                 "id": 2,
                 "comment": "Imagine all the eatables, living in conFusion!",
-                "autor": "John Lemon",
+                "author": "John Lemon",
                 "date": "Oct 17, 2012"
             },{
                 "id": 3,
                 "comment": "Ultame, Reaching for the stars!",
-                "autor": "Ringo Starry",
+                "author": "Ringo Starry",
                 "date": "Dec 03, 2013"
             }]
         },{

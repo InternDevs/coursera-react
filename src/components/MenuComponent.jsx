@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle, CardHeader } from 'reactstrap';
+import { Card, CardImg } from 'reactstrap';
 import DishDetail from "./DishDetailComponent";
 
 class Menu extends Component {
@@ -17,10 +17,10 @@ class Menu extends Component {
     }
 
     render() {
-        const menu = this.props.platos.map((dish) => {
+        const menu = this.props.dishes.map((dish) => {
             return (
-              <div className="col-12 col-md-5 m-1">
-                <Card key={dish.id} onClick={() => this.onDishSelect(dish)}>
+              <div className="col-12 col-md-5 m-1" key={dish.id}>
+                <Card key={`product-${dish.id}`} onClick={() => this.onDishSelect(dish)}>
                   <CardImg width="100%" src={dish.image} alt={dish.name} />
                 </Card>
               </div>
@@ -37,4 +37,5 @@ class Menu extends Component {
         );
     }
 }
+
 export default Menu;
