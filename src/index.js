@@ -6,11 +6,12 @@ import 'bootstrap-social/bootstrap-social.css';
 import './index.css';
 import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
+/* import { BrowserRouter } from 'react-router-dom'; */
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 
