@@ -1,14 +1,40 @@
-import React, { Component } from "react";
+import React from "react";
 import { Card, CardImg } from 'reactstrap';
 
-class Menu extends Component {
+const MenuItem = ({dish, onClick}) => {
+  return (
+    <Card key={`product-${dish.id}`} onClick={() => onClick(dish.id)}>
+      <CardImg width="100%" src={dish.image} alt={dish.name} />
+    </Card>
+  );
+}
+
+
+const Menu = (props) => {
+  const menu = props.dishes.map((dish) => {
+      return (
+        <div className="col-12 col-md-5 m-1" key={dish.id}>
+          <MenuItem dish={dish} onClick={props.onClick}/>
+        </div>
+      );
+  });
+
+  return (
+      <div className="container">
+          <div className="row">
+              {menu}
+          </div>
+      </div>
+  );
+};
+
+
+/* class Menu extends Component {
     render() {
         const menu = this.props.dishes.map((dish) => {
             return (
               <div className="col-12 col-md-5 m-1" key={dish.id}>
-                <Card key={`product-${dish.id}`} onClick={() => this.props.onClick(dish.id)}>
-                  <CardImg width="100%" src={dish.image} alt={dish.name} />
-                </Card>
+                <RenderMenuItem dish={dish} onClick={this.props.onClick}/>
               </div>
             );
         });
@@ -21,6 +47,6 @@ class Menu extends Component {
             </div>
         );
     }
-}
+} */
 
 export default Menu;
