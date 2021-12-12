@@ -1,10 +1,13 @@
 import React from "react";
-import { Card, CardImg } from 'reactstrap';
+import { Card, CardImg, Breadcrumb,BreadcrumbItem } from 'reactstrap';
+import { Link } from 'react-router-dom'
 
 const MenuItem = ({dish}) => {
   return (
-    <Card key={`product-${dish.id}`}>
-      <CardImg width="100%" src={dish.image} alt={dish.name} />
+    <Card>
+      <Link to={`/menu/${dish.id}`}>
+        <CardImg width="100%" src={dish.image} alt={dish.name} />
+      </Link>
     </Card>
   );
 }
@@ -21,9 +24,18 @@ const Menu = (props) => {
 
   return (
       <div className="container">
-          <div className="row">
-              {menu}
+        <div className="row">
+          <Breadcrumb>
+            <BreadcrumbItem><Link to={'/home'}>Home</Link></BreadcrumbItem>
+            <BreadcrumbItem active>Menu</BreadcrumbItem>
+          </Breadcrumb>
+          <div className="col-12">
+            <h3>Menu</h3>
           </div>
+        </div>
+        <div className="row">
+            {menu}
+        </div>
       </div>
   );
 };
