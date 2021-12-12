@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, CardImg } from 'reactstrap';
 
-const MenuItem = ({dish, onClick}) => {
+const MenuItem = ({dish}) => {
   return (
-    <Card key={`product-${dish.id}`} onClick={() => onClick(dish.id)}>
+    <Card key={`product-${dish.id}`}>
       <CardImg width="100%" src={dish.image} alt={dish.name} />
     </Card>
   );
@@ -14,7 +14,7 @@ const Menu = (props) => {
   const menu = props.dishes.map((dish) => {
       return (
         <div className="col-12 col-md-5 m-1" key={dish.id}>
-          <MenuItem dish={dish} onClick={props.onClick}/>
+          <MenuItem dish={dish} />
         </div>
       );
   });
