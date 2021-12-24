@@ -50,7 +50,7 @@ class Main extends Component {
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/menu' component={() => <Menu dishes={this.state.dishes} onClick={()=>null}/>} />
                     <Route path="/menu/:dishId" component={DishWithId}/>
-                    <Route path="/aboutus" component={()=> <About leaders={this.state.leaders}/>}/>
+                    <Route exact path="/aboutus" component={()=> <About leaders={this.state.leaders}/>}/>
                     <Route exact path='/contactus' component={()=> <ContactUs />} />
                     <Redirect to="/home" />
                 </Switch>
